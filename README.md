@@ -22,3 +22,28 @@ Usage:
 2. Enter a blog topic
 3. Choose post status (Draft / Publish)
 4. Click Generate Blog
+A new WordPress post will be created automatically.
+
+AI Prompt Format:
+Return ONLY JSON wrapped in <json></json> tags.
+
+<json>
+{
+  "title": "",
+  "content": "HTML allowed",
+  "tags": "comma, separated ,tags"
+}
+</json>
+
+Topic: USER_INPUT
+
+Example AI Response
+-------------------
+
+<json>
+{
+  "title": "Benefits of AI in Digital Marketing",
+  "content": "<p>AI helps businesses automate marketing...</p>",
+  "tags": "AI,marketing,automation"
+}
+</json>
